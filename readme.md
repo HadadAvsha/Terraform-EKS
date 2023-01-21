@@ -3,15 +3,16 @@
 ![image](https://user-images.githubusercontent.com/106066816/213890006-f895fd1e-0549-44d3-a309-d58b9eb1bb88.png)
 ![image](https://user-images.githubusercontent.com/106066816/213893907-613ec8ef-5e78-4af5-abb9-a55da8bd7026.png)
 ![image](https://user-images.githubusercontent.com/106066816/213893914-a349e449-9083-4c5f-85e1-0104daefaf68.png)
-.<br/>
+<br/>
 This is a simple Kubernetes doployment of Elastic Kubernetes Service(EKS) using Terraform.<br/>
-We will use:<br/>
+=============================================================================================
+# We will use:<br/>
 * 3 AZs in total, 1 for each subnet. (make sure your region correspond with said AZs).<br/>
 * 3 tf modules: Network, EKS and Helm-charts.<br/>
 * Uncomment __private_subnets.tf__ if you would like to use private subnet/s.<br/>
 * ~~Delete/commentout Helm-charts/ebs-csi-driver if youre not intending to use PVC~~.<br/>
 
-Prerequisites:<br/>
+# Prerequisites:<br/>
 * In order to Deploy this template you will need to install Terraform and make sure to have AWS CLI and your ~/.aws/credentials set or use [this](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-build) guide.<br/>
 * Change variables in: variables.tf and terraform.tfvars accordingly.<br/>
 
