@@ -1,6 +1,6 @@
 configs:
   secret: 
-    argocdServerAdminPassword: "$2a$10$1ron7X/wZOeui6muWuJaAOxzkS.brCP1kll50xswb3uontWSDBxbC"
+    argocdServerAdminPassword: ""
   params: 
     server.insecure: true
 fullnameOverride: "argocd"
