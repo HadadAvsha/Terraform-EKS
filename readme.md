@@ -16,6 +16,7 @@ This is a simple Kubernetes doployment of ArgoCD (using Helm) in Elastic Kuberne
 * In order to Deploy this template you will need to install Terraform and make sure to have AWS CLI and your ~/.aws/credentials set or use [this](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-build) guide.<br/>
 * Change variables in: variables.tf and terraform.tfvars accordingly.<br/>
 * Configure [CNI](https://aws.amazon.com/premiumsupport/knowledge-center/eks-persistent-storage/) in AWS in order to have PVCs.<br/>
+* In provider.tf modify backend to fit your bucket or delete the block for local backend.<br/>
 
 
 <!-- BEGIN_TF_DOCS -->
