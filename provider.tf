@@ -21,9 +21,9 @@ terraform {
 
   }
   backend "s3" {
-    region = "us-east-2"
-    bucket = "avsha-tf-state"
-    key    = "tfstate"
+    region = "<aws-bucket-region>"
+    bucket = "<bucket-name>"
+    key    = "<path/to/key>"
   }
   # required_version = "~> 0.14"
 }
